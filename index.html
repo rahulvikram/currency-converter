@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Currency Converter</title>
+        <meta name="description" content="">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Currency Converter</h1>
+        <h3>A useful conversion tool for calculating global exchange rates</h3>
+        <div class="main-sect">
+            <div class="input-sect" id="amount-sect">
+                <h5>Amount</h5>
+                <input type="number" name="amount" class="input-fields" id="amount-input" placeholder="Enter amount">
+            </div>
+            <div class="input-sect" id="from-sect" >
+                <h5>From</h5>
+                <select id="from-list" class="select-list">
+                    <option class="select-value" value="USD - US Dollar ($)">USD - US Dollar ($)</option>
+                    <option class="select-value" value="CAD - Canadian Dollar ($)">CAD - Canadian Dollar ($)</option>
+                    <option class="select-value" value="AUD - Australian Dollar ($)">AUD - Australian Dollar ($)</option>
+                    <option class="select-value" value="GBP - Pound Sterling (£)">GBP - Pound Sterling (£)</option>
+                    <option class="select-value" value="EUR - Euros (€)">EUR - Euros (€)</option>
+                    <option class="select-value" value="CHF - Swiss Franc (Fr)">CHF - Swiss Franc (Fr)</option>
+                    <option class="select-value" value="INR - Indian Rupees (₹)">INR - Indian Rupees (₹)</option>
+                    <option class="select-value" value="JPY - Japanese Yen (¥)">JPY - Japanese Yen (¥)</option>
+                    <option class="select-value" value="AED - Emirati Dirham (د.إ)">AED - Emirati Dirham (د.إ)</option>
+                    <option class="select-value" value="KWD - Kuwaiti Dinar (KD)">KWD - Kuwaiti Dinar (KD)</option>
+                    <option class="select-value" value="SGD - Singapore Dollar ($)">SGD - Singapore Dollar ($)</option>
+                </select>
+            </div>
+            <div class="input-sect" id="to-sect">
+                <h5>To</h5>
+                <select id="to-list" class="select-list">
+                    <option class="select-value" value="USD - US Dollar ($)">USD - US Dollar ($)</option>
+                    <option class="select-value" value="CAD - Canadian Dollar ($)">CAD - Canadian Dollar ($)</option>
+                    <option class="select-value" value="AUD - Australian Dollar ($)">AUD - Australian Dollar ($)</option>
+                    <option class="select-value" value="GBP - Pound Sterling (£)">GBP - Pound Sterling (£)</option>
+                    <option class="select-value" value="EUR - Euros (€)">EUR - Euros (€)</option>
+                    <option class="select-value" value="CHF - Swiss Franc (Fr)">CHF - Swiss Franc (Fr)</option>
+                    <option class="select-value" value="INR - Indian Rupees (₹)">INR - Indian Rupees (₹)</option>
+                    <option class="select-value" value="JPY - Japanese Yen (¥)">JPY - Japanese Yen (¥)</option>
+                    <option class="select-value" value="AED - Emirati Dirham (د.إ)">AED - Emirati Dirham (د.إ)</option>
+                    <option class="select-value" value="KWD - Kuwaiti Dinar (KD)">KWD - Kuwaiti Dinar (KD)</option>
+                    <option class="select-value" value="SGD - Singapore Dollar ($)">SGD - Singapore Dollar ($)</option>
+                </select>
+            </div>
+            <button type="button" class="button" id="btn" onclick="convertCurrency()">
+                <span class="button-icon">
+                    <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+                </span>
+            </button>
+        </div>
+        <div id="converted"></div>
+        <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

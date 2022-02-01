@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', serif;
+}
+
+body {
+    background-color: rgb(3, 11, 17)
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 48px;
+    margin-top: 5px;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+h5 {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    padding-bottom: 1px;
+}
+
+.main-sect {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-fields {
+    padding: 12px 10px;
+    width: 225px;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    background-color:rgb(5, 18, 29);
+}
+.input-fields::placeholder{
+    color: white;
+    font-size: 14px;
+}
+.input-fields:focus{
+    border: none;
+    outline: none;
+}
+.input-fields:focus::placeholder{
+    color: transparent;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.select-list {
+    cursor: pointer;
+    padding: 12px 10px;
+    width: 245px;
+    border-radius: 6px;
+    background-color:rgb(5, 18, 29);
+    color: white;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+.select-list:focus {
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.38)
+}
+
+.button {
+    background-color: #05121d;
+    color: white;
+    height: 42px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 0px 15px;
+    align-self: flex-end;
+    bottom: 0;
+    transition: all 200ms ease-in-out;
+    padding-top: 5px;
+    transform: translateY(0px);
+}
+.button:hover {
+    background-color: rgb(8, 24, 37);
+}
+.button-icon{
+    font-size: 22px;
+}
+
+#converted {
+    margin-top: 20px;
+    margin-left: 35px;
+    align-items: center;
+    color: white;
+}
+
+#conv-from {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+#conv-to {
+    font-size: 36px;
+    vertical-align: middle;
+}
+
+#from-symbol {
+    font-size: 16px;
+}
+#to-symbol {
+    font-size: 20px;
+}
+#converted h6{
+    font-size: 14px;
+    font-weight: 400;
+}
+.button2 {
+    background-color: #05121d;
+    margin-top: 10px;
+    color: white;
+    font-size: 15px;
+    height: 42px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    padding: 0px 15px;
+    align-self: flex-end;
+    bottom: 0;
+    transition: all 200ms ease-in-out;
+}
+.button2:hover {
+    background-color: rgb(8, 24, 37);
+}
